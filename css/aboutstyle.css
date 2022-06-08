@@ -1,0 +1,565 @@
+/* --------------------All-------------------- */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9683C1;
+}
+
+a { text-decoration: none; }
+
+h3{
+    font-family: 'Oi', cursive;
+    font-weight: 500;
+    font-size: 45px;
+    color: #F2E9E4;
+    -webkit-text-stroke: #0D0A0B 3px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.1rem;
+}
+
+text{
+    font-family: 'Oi', cursive;
+    font-weight: 300;
+    fill: #F2E9E4;
+    stroke: #0D0A0B;
+    stroke-width: 2px;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+
+.container{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobilelogo{
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    width: 90px;
+    height: 100%;
+    background-color: #F2E9E4;
+    border: #0D0A0B 2px solid;
+}
+
+.logo{
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 25px);
+}
+
+.buttona{
+    width: 50px;
+    height: 130px;
+    border-radius: 25px;
+    background-color: #0D0A0B;
+    border: #0D0A0B 2px solid;
+    position: absolute;
+    left: calc(50% - 25px);
+    top:90px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttona p{
+    font-weight: 600;
+    font-size: 30px;
+    color: #F2E9E4;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+.buttonp{
+    width: 50px;
+    height: 155px;
+    border-radius: 25px;
+    background-color: #F2E9E4;
+    border: #0D0A0B 2px solid;
+    position: absolute;
+    left: calc(50% - 25px);
+    top:240px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonp:hover{
+    background-color: #9683C1;
+}
+
+.buttonp p{
+    font-weight: 600;
+    font-size: 30px;
+    color: #0D0A0B;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+.linkspanner{
+    position: absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 30;
+}
+
+/* --------textarea-------- */
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left:90px;
+}
+
+.text1{
+    width: 680px;
+    height: 370px;
+    padding: 30px 0 0 60px;
+}
+
+path {
+    fill:transparent;
+}
+
+.doorup{
+    width: 550px;
+    height: 550px;
+    border: #0D0A0B 2px solid;
+    border-radius: 0 0 50% 50%;
+    background-image: url(../img/about2.jpg);
+    background-size: 100%;
+    transition: all .7s;
+    position: absolute;
+    top: -25%;
+    right: 10%;
+}
+
+.doorup:hover{
+    background-size: 115% ;
+    transition: all .3s;
+}
+
+.doordown{
+    width: 550px;
+    height: 550px;
+    border: #0D0A0B 2px solid;
+    border-radius: 50% 50% 0 0;
+    background-image: url(../img/about1.jpg);
+    background-size: 100%;
+    transition: all .7s;
+    position: absolute;
+    top:55%;
+    left: 5%;
+}
+
+.doordown:hover{
+    background-size: 115% ;
+    transition: all .3s;
+}
+
+.text2{
+    position: absolute;
+    right: 10%;
+    top: 60%;
+}
+
+span{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 5%;
+    top: 6%;
+}
+
+.arrow{
+    position: absolute;
+    z-index: 20;
+}
+
+.span{
+    position: absolute;
+    animation: spin 6s linear infinite;
+    animation-play-state: running; 
+    z-index: 10;
+}
+
+.span:hover{
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+    100% {transform: rotate(1turn); }
+}
+
+h4{
+    font-family: 'Oi', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: #0D0A0B 2px;
+    line-height: 0.1rem;
+}
+
+h5{
+    font-family: 'Oi', cursive;
+    font-weight: 500;
+    font-size: 29px;
+    color: #F2E9E4;
+    -webkit-text-stroke: #0D0A0B 2px;
+    line-height: 1px;
+    text-shadow: 0.2em 0.2em #0D0A0B;
+}
+
+h6{
+    font-family: 'Oi', cursive;
+    font-weight: 500;
+    font-size: 33px;
+    color: #F2E9E4;
+    -webkit-text-stroke: #0D0A0B 2px;
+    line-height: 1px;
+    text-shadow: 0.2em 0.2em #0D0A0B;
+    margin-top: 10px;
+}
+
+/* ----------------- 1800px ----------------- */
+
+@media (min-width: 1800px) {
+
+    .text1{
+        width: 850px;
+        height: 400px;
+        padding: 80px 0 0 100px;
+    }
+
+    p{
+        font-size: 40px;
+    }
+    
+    .doorup{
+        width: 650px;
+        height: 650px;
+        top: -15%;
+        right: 15%;
+    }
+    
+    .doordown{
+        width: 650px;
+        height: 650px;
+        top:60%;
+    }
+    
+    .text2{
+        right: 15%;
+        top: 60%;
+    }
+    
+    span{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        right: 1%;
+        top: 8%;
+    }
+    
+    h4{
+        font-size: 65px;
+    }
+    
+    h5{
+        font-size: 35px;
+    }
+    
+    h6{
+        font-size: 40px;
+    }
+}
+
+/* ----------------- 1400px ----------------- */
+
+@media (max-width: 1400px) {
+
+    .text1{
+        width: 640px;
+    }
+
+    h4{
+        font-size: 44px;
+    }
+    
+    h5{
+        font-size: 26px;
+    }
+    
+    h6{
+        font-size: 29px;
+    }
+}
+
+/* ----------------- 1200px ----------------- */
+
+@media (max-width: 1200px) {
+
+    .text1{
+        width: 450px;
+    }
+
+    span{
+        width: 60px;
+        height: 60px;
+    }
+
+    p{
+        font-size: 26px;
+    }
+
+    h4{
+        font-size: 34px;
+    }
+    
+    h5{
+        font-size: 20px;
+    }
+    
+    h6{
+        font-size: 23px;
+    }
+}
+
+/* ----------------- 1024px ----------------- */
+
+@media (max-width: 1024px) {
+
+    .doorup{
+        display: none;
+    }
+
+    .text1{
+        width: 850px;
+    }
+
+    .text2{
+        left: 60px;
+        top: 30%;
+    }
+
+    span{
+        width: 80px;
+        height: 80px;
+        right: 17%;
+        top: 10%;
+    }
+
+    p{
+        font-size: 40px;
+    }
+
+    h4{
+        font-size: 60px;
+    }
+    
+    h5{
+        font-size: 35px;
+    }
+    
+    h6{
+        font-size: 40px;
+    }
+
+    .doordown{
+        top:60%;
+        left:18%;
+    }
+    
+
+}
+
+/* ----------------- 768px ----------------- */
+
+@media (max-width: 768px) {
+
+    
+    .text1{
+        width: 620px;
+    }
+
+
+    span{
+        width: 70px;
+        height: 70px;
+        right: 15%;
+        top: 6%;
+    }
+
+    p{
+        font-size: 28px;
+    }
+
+    h4{
+        font-size: 44px;
+    }
+    
+    h5{
+        font-size: 26px;
+    }
+    
+    h6{
+        font-size: 29px;
+    }
+
+    .doordown{
+        top:60%;
+        left:8%;
+    }
+    
+}
+
+/* ----------------- 414px ----------------- */
+
+@media (max-width: 414px) {
+
+    .menu{
+        display: none;
+    }
+
+    .content{
+        left: 0;
+    }
+
+    .mobilelogo{
+        position: absolute;
+        display: inline-block;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 20;
+    }
+    
+    .text1{
+        width: 414px;
+        padding: 70px 20px 0px 20px;
+    }
+
+    .text2{
+        position: absolute;
+        left: 20px;
+        top: 45%;
+    }
+
+    span{
+        width: 45px;
+        height: 45px;
+        right: 6%;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 26px;
+    }
+    
+    h5{
+        font-size: 16px;
+    }
+    
+    h6{
+        font-size: 18px;
+    }
+
+    svg{
+        display: none;
+    }
+
+    .doordown{
+        width: 350px;
+        height: 350px;
+        top:65%;
+        left:8%;
+    }
+    
+}
+
+/* ----------------- 375px ----------------- */
+
+@media (max-width: 375px) {
+
+    .text1{
+        width: 370px;
+    }
+
+    .text2{
+        top: 47%;
+    }
+
+    h4{
+        font-size: 25px;
+    }
+    
+    h5{
+        font-size: 15px;
+    }
+    
+    h6{
+        font-size: 17px;
+    }
+
+    .doordown{
+        width: 350px;
+        height: 350px;
+        top:70%;
+        left:3%;
+    }
+    
+}
+
+/* ----------------- 320px ----------------- */
+
+@media (max-width: 320px) {
+
+    .text1{
+        width: 310px;
+    }
+
+    .text2{
+        top: 70%;
+    }
+
+    h4{
+        font-size: 22px;
+    }
+
+    span{
+        width: 40px;
+        height: 40px;
+        right: 2%;
+    }
+    
+    h5{
+        font-size: 13px;
+    }
+    
+    h6{
+        font-size: 15px;
+    }
+
+    .doordown{
+        display: none;
+    }
+    
+}
