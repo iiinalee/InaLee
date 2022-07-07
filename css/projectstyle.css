@@ -130,7 +130,7 @@ p{
     overflow: hidden;
 }
 
-.photochick, .photolife, .photoiloan, .photokyc, .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9, .photo10, .photo11,.photo12{
+.photochick, .photosmart, .photolife, .photoiloan, .photokyc, .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9, .photo10, .photo11,.photo12{
     background-size: 100%;   
     transition: linear 0.2s;
 }
@@ -140,6 +140,14 @@ p{
 }
 .photochick:hover{
     background-image: url(../img/chick0.png);
+    background-size: 105%;   
+}
+
+.photosmart{
+    background-image: url(../img/smart00.jpg);
+}
+.photosmart:hover{
+    background-image: url(../img/smart0.jpg);
     background-size: 105%;   
 }
 

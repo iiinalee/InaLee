@@ -263,7 +263,6 @@ img{
     border: #0D0A0B 2px solid;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: #0D0A0B 15px 15px;
 }
 
 .rightpic{
@@ -390,7 +389,6 @@ text{
         height: 270px;
         width: 500px;
         border-radius: 32px;
-        box-shadow: #0D0A0B 10px 10px;
     }
     
     .rightpic{
@@ -531,7 +529,6 @@ text{
         height: 110px;
         width: 200px;
         border-radius: 20px;
-        box-shadow: #0D0A0B 8px 8px;
     }
     
     .rightpic{
