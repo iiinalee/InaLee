@@ -130,7 +130,7 @@ p{
     overflow: hidden;
 }
 
-.photocar, .photoorderly, .photochick, .photosmart, .photolife, .photoiloan, .photokyc, .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9, .photo10, .photo11,.photo12{
+.photocar, .photobuilding, .photoorderly, .photochick, .photosmart, .photolife, .photoiloan, .photokyc, .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9, .photo10, .photo11,.photo12{
     background-size: 100%;   
     transition: linear 0.2s;
 }
@@ -143,11 +143,11 @@ p{
     background-size: 105%;   
 }
 
-.photoorderly{
-    background-image: url(../img/Orderly00.jpg);
+.photobuilding{
+    background-image: url(../img/bu00.jpg);
 }
-.photoorderly:hover{
-    background-image: url(../img/Orderly0.jpg);
+.photobuilding:hover{
+    background-image: url(../img/bu0.jpg);
     background-size: 105%;   
 }
 
@@ -156,6 +156,14 @@ p{
 }
 .photochick:hover{
     background-image: url(../img/chick0.png);
+    background-size: 105%;   
+}
+
+.photoorderly{
+    background-image: url(../img/Orderly00.jpg);
+}
+.photoorderly:hover{
+    background-image: url(../img/Orderly0.jpg);
     background-size: 105%;   
 }
 
